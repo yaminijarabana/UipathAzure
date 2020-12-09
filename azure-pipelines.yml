@@ -1,6 +1,13 @@
 # Starter pipeline
 - task: UiPathTest@2
   inputs:
+    testTarget: 'TestSet'
+    orchestratorConnection: 'Orchestrator'
+    testSet: 'LatestAddGettestqueue'
+    folderName: 'Default'
+    testReportDestination: 'C:\Users\saigo\Documents\UiPath\AzurePipeline\project.json'
+- task: UiPathTest@2
+  inputs:
     testTarget: 'TestProject'
     orchestratorConnection: 'Orchestrator'
     testProjectPath: 'C:\Users\saigo\Documents\UiPath\AzurePipeline'
