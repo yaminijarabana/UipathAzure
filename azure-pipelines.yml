@@ -1,4 +1,12 @@
 # Starter pipeline
+- task: UiPathTest@2
+  inputs:
+    testTarget: 'TestProject'
+    orchestratorConnection: 'Orchestrator'
+    testProjectPath: 'C:\Users\saigo\Documents\UiPath\AzurePipeline'
+    environment: 'local'
+    folderName: 'Default'
+    testReportDestination: 'C:\Users\saigo\Documents\UiPath\AzurePipeline\Results'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
