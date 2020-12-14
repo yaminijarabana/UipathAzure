@@ -8,6 +8,13 @@ trigger:
 
 pool:
   vmImage: 'ubuntu-latest'
+- task: UiPathTest@2
+  inputs:
+    testTarget: 'TestProject'
+    orchestratorConnection: 'Orchestrator'
+    testProjectPath: 'C:\Users\saigo\Documents\UiPath\TestQueue'
+    environment: 'Local'
+    folderName: 'Default'
 
 steps:
 - script: echo Hello, world!
